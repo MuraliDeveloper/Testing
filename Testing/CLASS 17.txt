@@ -21,7 +21,7 @@ password is object -> we type should not be visible + if we chose to show passwo
 state dropdown obj -> if we change state then city dropdown chnages...
 city dropdown obj ->
 
-
+-> what values are allowed, what values are not allowed, 
 
 b)Error handling/coverage testing:
 negative scenarios testing.
@@ -41,6 +41,8 @@ ex:
 	
 c)calculation /manipulation testing:
 ------------------------------------
+ scenarios: bil generation , transaction , financial invoice.
+  
 ex:
 1.debit + credit 
 check the final bal for both accounts.
@@ -49,12 +51,17 @@ user2 : 9000
 user1 transfers 1000 to user2 
 USER1 : 5000
 user2 : 10000
+database testing is required.
+
 
 2. add products to cart
 in final bill the total amount to be paid = sum of prices of all products 
-
-+ additionaly apply discount + taxes ===> final price.
-
++ additionaly apply discount + taxes  ===> final price.
+  
+  if bill is > 5000 then give a discount of 500 rupees:
+a) when bill < 5000
+b) when bill >=5000
+  
 
 ex: financial , banking , ecommerce.
 
@@ -64,7 +71,7 @@ d)Links coverage:
 -applicable for the web applications.
 - check if the expected links are displayed on the page.
 - check if the links are displayed in the expcted layout/position.
-- check invalid links should not links.
+- check invalid links should not links or existing links are not broken
 ex: on home we would expect login + register 
 
 - check if the links are working ? navigating to the target page as expected??
